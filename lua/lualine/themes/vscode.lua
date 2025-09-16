@@ -10,7 +10,7 @@ if vim.o.background == 'dark' then
     colors.bg2 = '#373737'
     colors.fg = '#ffffff'
     colors.red = '#f44747'
-    colors.green = '#4EC9B0'
+    colors.green = '#6A9955' --'#4EC9B0'
     colors.blue = '#0a7aca'
     colors.lightblue = '#5CB6F8'
     colors.yellow = '#ffaf00'
