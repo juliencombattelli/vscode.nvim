@@ -10,7 +10,8 @@ if vim.o.background == 'dark' then
     colors.bg2 = '#373737'
     colors.fg = '#ffffff'
     colors.red = '#f44747'
-    colors.green = '#6A9955' --'#4EC9B0'
+    colors.green = '#6A9955'
+    colors.bluegreen = '#4EC9B0'
     colors.blue = '#0a7aca'
     colors.lightblue = '#5CB6F8'
     colors.yellow = '#ffaf00'
@@ -22,6 +23,7 @@ else
     colors.fg = '#343434'
     colors.red = '#FF0000'
     colors.green = '#008000'
+    colors.bluegreen = '#4EC9B0'
     colors.blue = '#AF00DB'
     colors.lightblue = '#0451A5'
     colors.yellow = '#c08000'
@@ -58,7 +60,7 @@ vscode.insert = {
 }
 
 vscode.terminal = {
-    a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.green, gui = 'bold' },
+    a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.bluegreen, gui = 'bold' },
     b = { fg = colors.fg, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
