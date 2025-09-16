@@ -6,8 +6,8 @@ local colors = {}
 
 if vim.o.background == 'dark' then
     colors.inactive = '#666666'
-    colors.bg = '#262626'
-    colors.bg2 = '#373737'
+    colors.bg = config.opts.transparent and '#181818' or '#262626'
+    colors.bg2 = config.opts.transparent and '#303030' or '#373737'
     colors.fg = '#ffffff'
     colors.red = '#f44747'
     colors.green = '#6A9955'

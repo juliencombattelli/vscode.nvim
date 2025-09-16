@@ -29,6 +29,7 @@ config.setup = function(user_opts)
 
     -- setting transparent to true removes the default background
     if config.opts.transparent then
+        -- TODO only groups using vscBack as bg should be cleared
         config.opts.color_overrides.vscBack = 'NONE'
     end
 end
