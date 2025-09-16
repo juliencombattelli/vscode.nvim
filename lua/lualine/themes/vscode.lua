@@ -46,7 +46,7 @@ vscode.inactive = {
 }
 
 vscode.replace = {
-    a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.red, gui = 'bold' },
+    a = { fg = vim.o.background == 'dark' and colors.fg or colors.bg, bg = colors.red, gui = 'bold' },
     b = { fg = colors.red, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
