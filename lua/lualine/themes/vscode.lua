@@ -8,7 +8,8 @@ if vim.o.background == 'dark' then
     colors.inactive = '#666666'
     colors.bg = config.opts.transparent and '#181818' or '#262626'
     colors.bg2 = config.opts.transparent and '#303030' or '#373737'
-    colors.fg = '#ffffff'
+    colors.fg = '#FFFFFF'
+    colors.fg2 = '#BBBBBB'
     colors.red = '#f44747'
     colors.green = '#6A9955'
     colors.bluegreen = '#4EC9B0'
@@ -21,6 +22,7 @@ else
     colors.bg = '#F5F5F5'
     colors.bg2 = '#E4E4E4'
     colors.fg = '#343434'
+    colors.fg2 = '#343434'
     colors.red = '#FF0000'
     colors.green = '#008000'
     colors.bluegreen = '#4EC9B0'
@@ -33,7 +35,7 @@ end
 vscode.normal = {
     a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
     b = { fg = colors.green, bg = colors.bg2 },
-    c = { fg = colors.fg, bg = colors.bg },
+    c = { fg = colors.fg2, bg = colors.bg },
 }
 
 vscode.visual = {
@@ -50,25 +52,25 @@ vscode.inactive = {
 vscode.replace = {
     a = { fg = vim.o.background == 'dark' and colors.fg or colors.bg, bg = colors.red, gui = 'bold' },
     b = { fg = colors.red, bg = colors.bg2 },
-    c = { fg = colors.fg, bg = colors.bg },
+    c = { fg = colors.fg2, bg = colors.bg },
 }
 
 vscode.insert = {
     a = { fg = vim.o.background == 'dark' and colors.fg or colors.bg, bg = colors.blue, gui = 'bold' },
     b = { fg = colors.blue, bg = colors.bg2 },
-    c = { fg = colors.fg, bg = colors.bg },
+    c = { fg = colors.fg2, bg = colors.bg },
 }
 
 vscode.terminal = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.bluegreen, gui = 'bold' },
     b = { fg = colors.fg, bg = colors.bg2 },
-    c = { fg = colors.fg, bg = colors.bg },
+    c = { fg = colors.fg2, bg = colors.bg },
 }
 
 vscode.command = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.pink, gui = 'bold' },
     b = { fg = colors.pink, bg = colors.bg2 },
-    c = { fg = colors.fg, bg = colors.bg },
+    c = { fg = colors.fg2, bg = colors.bg },
 }
 
 return vscode
